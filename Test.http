@@ -1,4 +1,5 @@
 ###
+### Admin Register
 POST http://localhost:5000/api/adminregister
 Content-Type: application/json
 
@@ -8,3 +9,28 @@ Content-Type: application/json
   "password": "123"
   
 }
+
+### heads insert
+POST http://localhost:5000/api/headinsert
+Content-Type: application/json
+
+{
+  "id": "22it020",
+  "name": "dharsani",
+  "email": "dharsani@gmail.com",
+  "password": "123",
+  "designation" : "join secretary"
+}
+
+###get all heads
+GET http://localhost:5000/api/getallheads
+
+####remove head by id
+DELETE http://localhost:5000/api/deleteheadbyid
+Content-Type: application/json
+
+{
+  "id": "22it020"
+}
+
+
