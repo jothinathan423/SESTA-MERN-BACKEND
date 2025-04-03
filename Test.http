@@ -3,8 +3,8 @@ POST http://localhost:5000/api/adminregister
 Content-Type: application/json
 
 {
-  "name": "jothinathan",
-  "email": "jothinathannagarajan@gmail.com",
-  "password": "123"
+  "name": "Prethi",
+  "email": "preethi@gmail.com",
+  "password": "1234"
   
 }
