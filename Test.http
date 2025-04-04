@@ -1,10 +1,54 @@
 ###
+### Admin Register
 POST http://localhost:5000/api/adminregister
 Content-Type: application/json
 
 {
-  "name": "jothinathan",
-  "email": "jothinathannagarajan@gmail.com",
-  "password": "123"
+  "name": "rubiga",
+  "email": "rubiga@gmail.com",
+  "password": "1234"
   
 }
+
+### heads insert
+POST http://localhost:5000/api/headinsert
+Content-Type: application/json
+
+{
+  "id": "22it020",
+  "name": "dharsani",
+  "email": "dharsani@gmail.com",
+  "password": "123",
+  "designation" : "join secretary"
+}
+
+###get all heads
+GET http://localhost:5000/api/getallheads
+
+####remove head by id
+DELETE http://localhost:5000/api/deleteheadbyid
+Content-Type: application/json
+
+{
+  "id": "22it020"
+}
+
+
+###
+POST http://localhost:5000/api/insertca
+Content-Type: application/json
+
+{
+    "name": "preethi",
+    "department": "IT",
+    "section": "B",
+    "email": "preethi@gmail.com"
+}
+
+###
+GET http://localhost:5000/api/viewca
+
+###
+DELETE http://localhost:5000/api/removecabyid/67eff0fa6cef34708447c0d8
+Content-Type: application/json
+
