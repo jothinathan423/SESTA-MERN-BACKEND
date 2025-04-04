@@ -4,8 +4,8 @@ POST http://localhost:5000/api/adminregister
 Content-Type: application/json
 
 {
-  "name": "Prethi",
-  "email": "preethi@gmail.com",
+  "name": "rubiga",
+  "email": "rubiga@gmail.com",
   "password": "1234"
   
 }
@@ -39,10 +39,10 @@ POST http://localhost:5000/api/insertca
 Content-Type: application/json
 
 {
-    "name": "Jothinathan",
+    "name": "preethi",
     "department": "IT",
-    "section": "A",
-    "email": "jothi@gmail.com"
+    "section": "B",
+    "email": "preethi@gmail.com"
 }
 
 ###
