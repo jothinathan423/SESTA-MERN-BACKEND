@@ -8,3 +8,14 @@ Content-Type: application/json
   "password": "1234"
   
 }
+
+###
+POST http://localhost:5000/api/insertca
+Content-Type: application/json
+
+{
+    "name": "Jothinathan",
+    "department": "IT",
+    "section": "A",
+    "email": "jothi@gmail.com"
+}
