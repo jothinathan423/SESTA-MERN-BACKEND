@@ -19,3 +19,11 @@ Content-Type: application/json
     "section": "A",
     "email": "jothi@gmail.com"
 }
+
+###
+GET http://localhost:5000/api/viewca
+
+###
+DELETE http://localhost:5000/api/removecabyid/67eff0fa6cef34708447c0d8
+Content-Type: application/json
+

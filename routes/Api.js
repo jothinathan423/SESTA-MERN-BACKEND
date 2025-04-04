@@ -40,5 +40,33 @@ router.post('/insertca',async (req,res) =>{
 })
 
 //view ca's
+router.get('/viewca',async (req, res) =>{
+    try{
+        const cas = await Ca.find();
+        res.status(200).json(cas);
+    }
+    catch (err) {
+        res.status(500).json('error');
+    }
+})
 
+//deleting ca's
+
+router.delete('/removecabyid/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Correct usage of findByIdAndDelete
+        const ca = await Ca.findByIdAndDelete(id);
+
+        if (!ca) {
+            return res.status(404).json({ message: "Ca not found" });
+        }
+
+        res.status(200).json({ message: "CA removed", ca });
+    } catch (err) {
+        console.error("Error deleting CA:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
 module.exports = router;
