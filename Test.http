@@ -15,11 +15,24 @@ POST http://localhost:5000/api/hodregister
 Content-Type: application/json
 
 {
-  "name": "Dr.Punar",
-  "email": "punar.it@department.com",
-  "password": "9876",
+  "name": "Dr.Anitha",
+  "email": "anitha.it@department.com",
+  "password": "9875",
   "department": "IT"
 }
+
+
+###
+POST http://localhost:5000/api/hodlogin
+Content-Type: application/json
+
+{
+  
+  "email": "anitha.it@department.com",
+  "password": "9875"
+  
+}
+
 
 ### heads insert
 POST http://localhost:5000/api/headinsert
