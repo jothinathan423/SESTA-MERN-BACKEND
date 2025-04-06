@@ -1,15 +1,17 @@
-const jwt = require("jsonwebtoken");
+const jwt = require('jsonwebtoken');
 
 const auth = (req, res, next) => {
-    const token = req.header("Authorization")?.split(" ")[1]; // Bearer <token>
-    if (!token) return res.status(401).json({ msg: "No token, authorization denied" });
-
     try {
+        const token = req.headers.authorization?.split(" ")[1]; // Format: Bearer <token>
+        if (!token) {
+            return res.status(401).json({ message: "Auth failed: No token provided" });
+        }
+
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded.user; // { id: userId }
+        req.user = decoded; // You can now access `req.user` in protected routes
         next();
     } catch (err) {
-        res.status(401).json({ msg: "Token is not valid" });
+        res.status(401).json({ message: "Auth failed: Invalid token" });
     }
 };
 
