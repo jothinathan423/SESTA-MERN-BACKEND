@@ -1,0 +1,24 @@
+### Admin Login to get token
+POST http://localhost:5000/api/admin/adminlogin
+Content-Type: application/json
+
+{
+  "email": "ruby@gmail.com",
+  "password": "0103"
+}
+
+### Insert Class Advisor
+POST http://localhost:5000/api/ca/insert
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwNDUwNDksImV4cCI6MTc0NDA0NTEwOX0.LX4KHG-rERZE8-g_DmJgqJMaD1507EtmkUS8S2YO2qc
+
+{
+  "name": "jothinathan n",
+  "department": "IT",
+  "section": "A",
+  "email": "jothinathannagarajan@gmail.com"
+}
+
+### Delete Class Advisor
+DELETE http://localhost:5000/api/ca/delete/jothi@gmail.com
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwNDUwNDksImV4cCI6MTc0NDA0NTEwOX0.LX4KHG-rERZE8-g_DmJgqJMaD1507EtmkUS8S2YO2qc
