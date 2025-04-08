@@ -10,7 +10,7 @@ Content-Type: application/json
 ### heads insert
 POST http://localhost:5000/api/admin-head/headinsert
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvdGhpbmF0aGFubmFnYXJqYW5AZ21haWwuY29tQGdtYWlsLmNvbSIsImlkIjoiNjdmNTJiMTRhYmVkMWE5YjMxMWE4YzU0IiwiaWF0IjoxNzQ0MTIwNzM1LCJleHAiOjE3NDQxMjQzMzV9.swXmw_sbdH5GcRNU401z9foBZheLalEuyMkcD30FspQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvdGhpbmF0aGFubmFnYXJqYW5AZ21haWwuY29tQGdtYWlsLmNvbSIsImlkIjoiNjdmNTJiMTRhYmVkMWE5YjMxMWE4YzU0IiwiaWF0IjoxNzQ0MTU1NTg5LCJleHAiOjE3NDQxNTkxODl9.F6YLE5DVYtPVmHv-azlbCqgfNtPZH_eg_pmLJsvJAPM
 
 
 {
@@ -36,4 +36,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvdGhpb
   "id": "22it020"
 }
 
+###LOGIN to check the heads
+POST http://localhost:5000/api/admin-head/headlogin
+Content-Type: application/json
 
+{
+  "email" :  "jothinathan@gmail.com",
+  "password" : "123"
+}
+
+###
