@@ -1,0 +1,15 @@
+### Insert Hod (with token)
+POST http://localhost:5000/api/Hod/insert
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMjI0OTksImV4cCI6MTc0NDEyNjA5OX0.T0mWwU_gO_Ex5Q6wjWwO6x6J-lqCg4koSEjTP6JysXY
+
+{
+  "name": "Punar",
+  "email": "punar@gmail.com",
+  "department": "IT"
+}
+
+### Delete HOD by email
+DELETE http://localhost:5000/api/Hod/delete/punar@gmail.com
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMjI0OTksImV4cCI6MTc0NDEyNjA5OX0.T0mWwU_gO_Ex5Q6wjWwO6x6J-lqCg4koSEjTP6JysXY
