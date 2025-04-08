@@ -10,7 +10,7 @@ Content-Type: application/json
 ### Insert Class Advisor
 POST http://localhost:5000/api/ca/insert
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwNDUwNDksImV4cCI6MTc0NDA0NTEwOX0.LX4KHG-rERZE8-g_DmJgqJMaD1507EtmkUS8S2YO2qc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMDcwMTUsImV4cCI6MTc0NDEwNzA3NX0.kXz5F-3x9zn9suO64eSiCer11tmLAnOnfwi9OmbR13c
 
 {
   "name": "jothinathan n",
@@ -21,4 +21,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ
 
 ### Delete Class Advisor
 DELETE http://localhost:5000/api/ca/delete/jothi@gmail.com
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwNDUwNDksImV4cCI6MTc0NDA0NTEwOX0.LX4KHG-rERZE8-g_DmJgqJMaD1507EtmkUS8S2YO2qc
+Authorization: Bearer eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMDcwMTUsImV4cCI6MTc0NDEwNzA3NX0.kXz5F-3x9zn9suO64eSiCer11tmLAnOnfwi9OmbR13c
