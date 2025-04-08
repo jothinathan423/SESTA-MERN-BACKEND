@@ -10,7 +10,7 @@ Content-Type: application/json
 ### Insert Class Advisor
 POST http://localhost:5000/api/ca/insert
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwOTA5NzgsImV4cCI6MTc0NDA5MTAzOH0.DCB0qBfAIu3GtjUcuiF2zIoQX11gKaUMImg7i-auszo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvdGhpbmF0aGFubmFnYXJqYW5AZ21haWwuY29tQGdtYWlsLmNvbSIsImlkIjoiNjdmNTJiMTRhYmVkMWE5YjMxMWE4YzU0IiwiaWF0IjoxNzQ0MTIwNjYwLCJleHAiOjE3NDQxMjQyNjB9.TIR4HtqV8zD6sHP1YtBcZ2ODyWM5joiKDBbK_oM4vmU
 
 {
   "name": "preethi",

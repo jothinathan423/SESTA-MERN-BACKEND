@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ClassAdvisor = require('../models/Head');
+const Head = require('../models/Head');
 const auth = require('../middleware/auth');
 
 
@@ -10,14 +10,14 @@ router.post('/headinsert', auth, async (req, res) => {
         const { id, name, email, password, designation } = req.body;
         const userexist = await Head.findOne({ id: id });
         if (userexist) {
-            res.status(400).json('Already Exist');
+            return res.status(400).json('Already Exist');
         }
         const newHead = new Head({ id, name, email, password, designation });
         await newHead.save();
         res.status(201).json({ message: 'head inserted successfully', user: newHead });
     }
     catch (err) {
-        res.status(500).json('server error');
+        res.status(500).json('server errors');
     }
 })
 

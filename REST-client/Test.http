@@ -3,9 +3,9 @@ POST http://localhost:5000/api/admin/adminregister
 Content-Type: application/json
 
 {
-  "name": "ruy",
-  "email": "ruby@gmail.com",
-  "password": "0103"
+  "name": "jothinathan",
+  "email": "jothinathannagarjan@gmail.com@gmail.com",
+  "password": "1234"
   
 }
 
