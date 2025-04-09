@@ -1,23 +1,34 @@
-### Admin Login to get token
+### Admin Login
 POST http://localhost:5000/api/admin/adminlogin
 Content-Type: application/json
 
 {
   "email": "ruby@gmail.com",
   "password": "0103"
+  
+}
+
+
+### Admin Login to get token
+POST http://localhost:5000/api/ca/calogin
+Content-Type: application/json
+
+{
+  "email": "sanjay@gmail.com",
+  "password": "123456"
 }
 
 ### Insert Class Advisor
 POST http://localhost:5000/api/ca/insert
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMjUyMzIsImV4cCI6MTc0NDEyNTgzMn0.rytJk_GKsJ-P8wkq6jqETw4cQstmiP_BC29006hv8qU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxNzg3NjYsImV4cCI6MTc0NDE3OTM2Nn0.GEX4nh9tzy6q83BQwmwY1fg8VWmMw_c3jcLxTrguGV8
 
 {
-  "name": "Romika T",
-  "department": "IT",
+  "name": "Sanjay s",
+  "department": "CY",
   "section": "B",
-  "email": "romika@gmail.com",
-  "password":"1234"
+  "email": "sanjay@gmail.com",
+  "password":"123456"
 }
 
 ### Delete Class Advisor
@@ -27,4 +38,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ
 
 ### View Class Advisors
 GET http://localhost:5000/api/ca/viewCas
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMjUyMzIsImV4cCI6MTc0NDEyNTgzMn0.rytJk_GKsJ-P8wkq6jqETw4cQstmiP_BC29006hv8qU
+Authorization: Bearer eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMDcwMTUsImV4cCI6MTc0NDEwNzA3NX0.kXz5F-3x9zn9suO64eSiCer11tmLAnOnfwi9OmbR13c
