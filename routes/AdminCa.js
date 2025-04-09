@@ -73,5 +73,23 @@ router.get('/viewCas',auth, async (req,res) => {
     }
 })
 
+// Filter Class Advisors by Department 
+router.get('/filterByDepartment/:department', auth, async (req, res) => {
+    try {
+        const { department } = req.params;
+
+        const cas = await ClassAdvisor.find({ department });
+
+        if (cas.length === 0) {
+            return res.status(404).json({ message: ` No Class Advisors found in ${department} department` });
+        }
+
+        res.status(200).json(cas);
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
+});
+
+
 
 module.exports = router;

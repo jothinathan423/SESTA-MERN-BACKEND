@@ -14,21 +14,21 @@ POST http://localhost:5000/api/ca/calogin
 Content-Type: application/json
 
 {
-  "email": "sanjay@gmail.com",
-  "password": "123456"
+  "email": "preethi@gmail.com",
+  "password": "2515"
 }
 
 ### Insert Class Advisor
 POST http://localhost:5000/api/ca/insert
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxNzg3NjYsImV4cCI6MTc0NDE3OTM2Nn0.GEX4nh9tzy6q83BQwmwY1fg8VWmMw_c3jcLxTrguGV8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmpheUBnbWFpbC5jb20iLCJpZCI6IjY3ZjU0OGJlMWY0NTY3Zjc0MWVmYTkxMCIsImlhdCI6MTc0NDIwNjM4MSwiZXhwIjoxNzQ0MjA2OTgxfQ.hNcxaPJzhyNdgpa9wU80z98aMgfOow_T09arl2SpDQk
 
 {
-  "name": "Sanjay s",
-  "department": "CY",
-  "section": "B",
-  "email": "sanjay@gmail.com",
-  "password":"123456"
+  "name": "Karthika S S",
+  "department": "IT",
+  "section": "A",
+  "email": "karthika@gmail.com",
+  "password":"1234"
 }
 
 ### Delete Class Advisor
@@ -38,4 +38,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ
 
 ### View Class Advisors
 GET http://localhost:5000/api/ca/viewCas
-Authorization: Bearer eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQxMDcwMTUsImV4cCI6MTc0NDEwNzA3NX0.kXz5F-3x9zn9suO64eSiCer11tmLAnOnfwi9OmbR13c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmpheUBnbWFpbC5jb20iLCJpZCI6IjY3ZjU0OGJlMWY0NTY3Zjc0MWVmYTkxMCIsImlhdCI6MTc0NDIwNjM4MSwiZXhwIjoxNzQ0MjA2OTgxfQ.hNcxaPJzhyNdgpa9wU80z98aMgfOow_T09arl2SpDQk
+
+###Filter by Departments
+GET http://localhost:5000/api/ca/filterByDepartment/CY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZWV0aGlAZ21haWwuY29tIiwiaWQiOiI2N2Y2N2JhNzQxZTczYWMwOTM3NDUwYTUiLCJpYXQiOjE3NDQyMDg4NTQsImV4cCI6MTc0NDIwOTQ1NH0.fF9lNn-aVt0HOuRFAJuM1KAVx8YJ7y8lP2r4hGTeKzY
