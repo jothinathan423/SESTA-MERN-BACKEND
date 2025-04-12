@@ -5,6 +5,8 @@ const auth = require('../middleware/auth');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const secretkey = process.env.JWT_SECRET;
+const cors = require('cors');
+router.use(cors());
 
 
 router.post('/CollegeusersInsert', auth, async (req, res) => {
