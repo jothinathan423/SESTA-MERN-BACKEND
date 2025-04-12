@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Route handler using api.js
-app.use('/api/admin', require('./routes/AdminApi'));
+app.use('/api/admin', require('./routes/LoginApi'));
  // <-- This now includes admin, user, etc.
 
 const port = process.env.PORT || 5000;
