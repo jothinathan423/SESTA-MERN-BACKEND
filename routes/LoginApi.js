@@ -9,7 +9,7 @@ const SECRET_KEY = process.env.JWT_SECRET;
 // Register Admin
 router.post('/adminregister', async (req, res) => {
     try {
-      const { name, email, password, role, phoneNumber, uniqueId, qualification, gender } = req.body;
+      const { name, email, password, role, phoneNumber, uniqueId, qualification, gender,department } = req.body;
   
       const userexist = await Admin.findOne({ email: email });
       if (userexist) return res.status(400).json('User already exists');
@@ -23,7 +23,8 @@ router.post('/adminregister', async (req, res) => {
         phoneNumber,
         uniqueId,
         qualification,
-        gender
+        gender,
+        department
       });
   
       await newAdmin.save();
@@ -47,7 +48,15 @@ router.post('/adminlogin', async (req, res) => {
     if (!isMatch) return res.status(401).json({ message: "Invalid password" });
 
     const token = jwt.sign({ id: admin._id }, SECRET_KEY, { expiresIn: '1h' });
-    res.json({ message: "Login successful", token, role: admin.role });
+
+    // ✅ Now sending department too
+    res.json({
+      message: "Login successful",
+      token,
+      role: admin.role,
+      department: admin.department,
+    });
+
   } catch (err) {
     console.error("Login error:", err);
     res.status(500).json({ message: "Server error" });
