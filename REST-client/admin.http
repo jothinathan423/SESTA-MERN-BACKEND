@@ -1,24 +1,46 @@
-### Admin Login to get token
-POST http://localhost:5000/api/admin/adminlogin
+
+### Admin Register
+POST http://localhost:5000/api/admin/adminregister
 Content-Type: application/json
 
 {
-  "email": "ruby@gmail.com",
-  "password": "0103"
+  "name":"rubiga",
+  "email": "rubiga@gmail.com",
+  "password": "0103",
+  "role": "Admin"
 }
 
-### Insert Class Advisor
-POST http://localhost:5000/api/ca/insert
+###
+POST http://localhost:5000/api/admin/adminregister
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwOTA5NzgsImV4cCI6MTc0NDA5MTAzOH0.DCB0qBfAIu3GtjUcuiF2zIoQX11gKaUMImg7i-auszo
 
 {
-  "name": "preethi",
-  "department": "IT",
-  "section": "A",
-  "email": "preethi@gmail.com"
+  "name":"Romika",
+  "email": "romika@gmail.com",
+  "password": "1234",
+  "role": "Hod"
 }
 
-### Delete Class Advisor
-DELETE http://localhost:5000/api/ca/delete/jothi@gmail.com
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1YnlAZ21haWwuY29tIiwiaWQiOiI2N2YzZmNhYWNjNGJhY2QxOGU3YjVlY2EiLCJpYXQiOjE3NDQwOTA5NzgsImV4cCI6MTc0NDA5MTAzOH0.DCB0qBfAIu3GtjUcuiF2zIoQX11gKaUMImg7i-auszo
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"Preethi",
+  "email": "preethi@gmail.com",
+  "password": "9876",
+  "role": "Ca"
+}
+
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"Jothinathan",
+  "email": "jothinathan@gmail.com",
+  "password": "5678",
+  "role": "Principal"
+}  
+
+
