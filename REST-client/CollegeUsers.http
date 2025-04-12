@@ -1,0 +1,26 @@
+### Admin Login to get token
+POST http://localhost:5000/api/admin/adminlogin
+Content-Type: application/json
+
+{
+  "email": "jothinathannagarjan@gmail.com@gmail.com",
+  "password": "1234"
+}
+
+####
+POST http://localhost:5000/api/collegeusers/CollegeusersInsert
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvdGhpbmF0aGFubmFnYXJqYW5AZ21haWwuY29tQGdtYWlsLmNvbSIsImlkIjoiNjdmNTJiMTRhYmVkMWE5YjMxMWE4YzU0IiwiaWF0IjoxNzQ0MzMzNjg5LCJleHAiOjE3NDQzMzcyODl9.dYJsgI4PwUAhnlOG9OHu9RnvBhXS3jz03rkMNzjscI0
+
+{
+  "id": "22it033",
+  "username": "jothinathan",
+  "password": "123",
+  "role":"staff",
+  "department":"it",
+  "phone":"8807993608",
+  "qualification":"b.tech",
+  "gender":"male"
+}
+
+####
