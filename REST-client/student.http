@@ -1,0 +1,18 @@
+POST http://localhost:5000/api/student/insert
+Content-Type: application/json
+
+{
+  "name": "Preethi",
+  "username": "preethi123",
+  "password": "123456",
+  "role": "student",
+  "phonenumber": "9876543895",
+  "department": "AIDS",
+  "id": "AD123",
+  "batch": "2021-2025",
+  "gender": "Female",
+  "year": "3",
+  "section": "A"
+}
+###
+GET  http://localhost:5000/api/student/view

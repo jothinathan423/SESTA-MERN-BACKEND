@@ -1,0 +1,46 @@
+
+### Admin Register
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"rubiga",
+  "email": "rubiga@gmail.com",
+  "password": "0103",
+  "role": "Admin"
+}
+
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"Romika",
+  "email": "romika@gmail.com",
+  "password": "1234",
+  "role": "Hod"
+}
+
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"Preethi",
+  "email": "preethi@gmail.com",
+  "password": "9876",
+  "role": "Ca"
+}
+
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"Jothinathan",
+  "email": "Archana@gmail.com",
+  "password": "5678",
+  "role": "Principal"
+}  
+
+

@@ -10,8 +10,9 @@ connectDb();
 app.use(cors());
 app.use(express.json());
 
-// Route handler using api.js
-app.use('/api', require('./routes/Api'));  // <-- This now includes admin, user, etc.
+
+app.use('/api', require('./routes/Api'));
+
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
