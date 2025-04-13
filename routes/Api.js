@@ -8,6 +8,15 @@ const adminRouter = require('./auth');
 const CollegeLoginApi = require('./LoginApi');
 const principal = require('./PrincipalOperation');
 const staff = require('./StaffOperation');
+const admincaInsert = require('./AdminCa');
+const studentInsert = require('./studentroute');
+
+// Ensure this matches the file name
+
+// Use those routes
+
+router.use('/ca', admincaInsert);
+router.use('/student', studentInsert);
 
 
 
