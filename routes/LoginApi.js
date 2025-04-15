@@ -55,6 +55,7 @@ router.post('/adminlogin', async (req, res) => {
       token,
       role: admin.role,
       department: admin.department,
+      id:admin._id
     });
 
   } catch (err) {
