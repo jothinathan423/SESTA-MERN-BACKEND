@@ -41,6 +41,67 @@ Content-Type: application/json
   "email": "Archana@gmail.com",
   "password": "5678",
   "role": "Principal"
+} 
+### 
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"suresh",
+  "email": "suresh@gmail.com",
+  "password": "5678",
+  "role": "admin",
+  "phoneNumber":"7548806447",
+  "uniqueId":"3",
+  "qualification":"b.tech",
+  "gender":"male",
+  "department":"it"
+}  
+###
+
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"pree",
+  "email": "pre@gmail.com",
+  "password": "1234",
+  "role": "staff",
+  "phoneNumber":"7548806449",
+  "uniqueId":"4",
+  "qualification":"b.tech",
+  "gender":"female",
+  "department":"it"
+}  
+###
+
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
+
+{
+  "name":"romee",
+  "email": "romi@gmail.com",
+  "password": "12345",
+  "role": "hod",
+  "phoneNumber":"7548806445",
+  "uniqueId":"4",
+  "qualification":"b.tech",
+  "gender":"female",
+  "department":"it"
 }  
 
+###
+POST http://localhost:5000/api/admin/adminregister
+Content-Type: application/json
 
+{
+  "name":"jothee",
+  "email": "jothe@gmail.com",
+  "password": "123456",
+  "role": "principal",
+  "phoneNumber":"7548806445",
+  "uniqueId":"9",
+  "qualification":"b.tech",
+  "gender":"male",
+  "department":"it"
+}  
